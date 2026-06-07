@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Meal Meter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            text-align: center;
+            padding: 16px;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .lang-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 0 4px;
+            background: #f3f4f6;
+            color: #374151;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .lang-btn.active {
+            background: #16A34A;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            margin-top: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #16A34A;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 22px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h3 {
+            color: #15803D;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        p, li {
+            color: #374151;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #16A34A;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            background: #f0fdf4;
+            border-left: 4px solid #16A34A;
+            padding: 12px 16px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #15803D;
+        }
+
+        .contact-box {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        footer a {
+            margin: 0 8px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: #16A34A;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🍎 Meal Meter</h1>
+        <p>Gizlilik Politikası / Privacy Policy</p>
+    </div>
+
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="showLang('tr')">🇹🇷 Türkçe</button>
+        <button class="lang-btn" onclick="showLang('en')">🇬🇧 English</button>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Ana Sayfa / Home</a>
+
+        <!-- TÜRKÇE -->
+        <div id="tr-content" class="lang-section active">
+            <h2>Gizlilik Politikası</h2>
+            <div class="last-updated">📅 Son güncelleme: 7 Haziran 2026</div>
+
+            <p>Meal Meter ("Uygulama", "biz", "bizim") olarak gizliliğinize değer veriyoruz. Bu Gizlilik Politikası, mobil uygulamamızı kullandığınızda hangi bilgileri topladığımızı, nasıl kullandığımızı ve koruduğumuzu açıklar.</p>
+
+            <h2>1. Topladığımız Bilgiler</h2>
+
+            <h3>1.1 Kullanıcı Tarafından Sağlanan Bilgiler</h3>
+            <ul>
+                <li><strong>Profil Bilgileri:</strong> İsim, yaş, cinsiyet, boy, kilo, hedef kilo, aktivite seviyesi</li>
+                <li><strong>Sağlık ve Beslenme Verileri:</strong> Yediğiniz yemekler, kalori alımı, su tüketimi, makro besin değerleri</li>
+                <li><strong>Yemek Fotoğrafları:</strong> AI analizi için yüklediğiniz yemek görselleri</li>
+                <li><strong>Aktivite Verileri:</strong> Adım sayısı, yakılan kalori, aktif dakika</li>
+            </ul>
+
+            <h3>1.2 Otomatik Toplanan Bilgiler</h3>
+            <ul>
+                <li><strong>Cihaz Bilgileri:</strong> İşletim sistemi, cihaz modeli, uygulama versiyonu</li>
+                <li><strong>Kullanım İstatistikleri:</strong> Uygulamayı nasıl kullandığınıza dair anonim veriler</li>
+                <li><strong>Reklam Tanımlayıcıları:</strong> Google Play Servisleri tarafından sağlanan reklam kimlikleri</li>
+            </ul>
+
+            <h2>2. Bilgileri Nasıl Kullanırız</h2>
+            <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+            <ul>
+                <li>Kişiselleştirilmiş kalori ve beslenme hesaplamaları yapmak</li>
+                <li>AI destekli yemek analizi ve tarif önerileri sunmak</li>
+                <li>İlerleme grafikleri ve raporlar oluşturmak</li>
+                <li>Uygulama deneyimini iyileştirmek</li>
+                <li>Premium abonelikleri yönetmek</li>
+                <li>Teknik destek sağlamak</li>
+                <li>Yasal yükümlülükleri yerine getirmek</li>
+            </ul>
+
+            <h2>3. Üçüncü Taraf Servisler</h2>
+            <p>Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:</p>
+
+            <h3>3.1 Anthropic (Claude AI)</h3>
+            <p>Yemek fotoğraflarınızın analizi için Anthropic'in Claude AI servisini kullanıyoruz. Görseller analiz için Anthropic sunucularına gönderilir. <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic Gizlilik Politikası</a></p>
+
+            <h3>3.2 Google AdMob</h3>
+            <p>Ücretsiz versiyon kullanıcılarına reklam göstermek için Google AdMob kullanıyoruz. AdMob, kişiselleştirilmiş reklamlar için cihaz tanımlayıcılarınızı kullanabilir. <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></p>
+
+            <h3>3.3 RevenueCat</h3>
+            <p>Premium abonelik yönetimi için RevenueCat kullanıyoruz. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Gizlilik Politikası</a></p>
+
+            <h3>3.4 Google Play Faturalandırma</h3>
+            <p>Premium aboneliklerin satın alımı için Google Play Faturalandırma kullanılır. Ödeme bilgilerinizi biz görmeyiz; tamamen Google tarafından işlenir.</p>
+
+            <h3>3.5 Firebase</h3>
+            <p>Kimlik doğrulama ve veri senkronizasyonu için Google Firebase kullanıyoruz. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Gizlilik Politikası</a></p>
+
+            <h3>3.6 Open Food Facts</h3>
+            <p>Barkod taraması sırasında ürün bilgilerini almak için Open Food Facts açık veritabanını kullanıyoruz.</p>
+
+            <h2>4. Veri Saklama</h2>
+            <p>Verilerinizin büyük çoğunluğu <strong>cihazınızda yerel olarak</strong> Hive veritabanında saklanır. Yemek fotoğrafları AI analizi için Anthropic sunucularına gönderilir ancak yanıt geldikten sonra Anthropic tarafından eğitim için kullanılmaz.</p>
+
+            <h2>5. Veri Güvenliği</h2>
+            <p>Verilerinizin güvenliğini sağlamak için endüstri standardı güvenlik önlemleri kullanıyoruz. Ancak internet üzerinden hiçbir iletim yöntemi %100 güvenli değildir.</p>
+
+            <h2>6. Kullanıcı Hakları (KVKK & GDPR)</h2>
+            <p>Aşağıdaki haklara sahipsiniz:</p>
+            <ul>
+                <li>Verilerinize erişme</li>
+                <li>Verilerinizi düzeltme veya silme</li>
+                <li>Veri işlemeye itiraz etme</li>
+                <li>Verilerinizi taşıma</li>
+                <li>Verilerinizin işlenmesini kısıtlama</li>
+            </ul>
+            <p>Bu hakları kullanmak için: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+
+            <h2>7. Çocuklar</h2>
+            <p>Uygulamamız 13 yaş altı çocuklara yönelik değildir. Bilerek 13 yaş altı çocuklardan bilgi toplamayız. Eğer böyle bir durum fark ederseniz lütfen bizimle iletişime geçin.</p>
+
+            <h2>8. Hesap Silme</h2>
+            <p>Hesabınızı ve tüm verilerinizi silmek için:</p>
+            <ul>
+                <li>Uygulama içinde: Ayarlar → Profilimi Sıfırla</li>
+                <li>E-posta ile: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></li>
+            </ul>
+
+            <h2>9. Politika Değişiklikleri</h2>
+            <p>Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulama içinde veya bu sayfada bildiririz.</p>
+
+            <h2>10. İletişim</h2>
+            <div class="contact-box">
+                <p><strong>Sorularınız için:</strong></p>
+                <p>📧 E-posta: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+                <p>🌐 Web: <a href="https://bystark.github.io">bystark.github.io</a></p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="en-content" class="lang-section">
+            <h2>Privacy Policy</h2>
+            <div class="last-updated">📅 Last updated: June 7, 2026</div>
+
+            <p>Meal Meter ("App", "we", "our") values your privacy. This Privacy Policy explains what information we collect, how we use it, and how we protect it when you use our mobile application.</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Profile Information:</strong> Name, age, gender, height, weight, target weight, activity level</li>
+                <li><strong>Health and Nutrition Data:</strong> Meals consumed, calorie intake, water consumption, macronutrients</li>
+                <li><strong>Food Photos:</strong> Images you upload for AI analysis</li>
+                <li><strong>Activity Data:</strong> Steps, calories burned, active minutes</li>
+            </ul>
+
+            <h3>1.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Operating system, device model, app version</li>
+                <li><strong>Usage Statistics:</strong> Anonymous data about how you use the app</li>
+                <li><strong>Advertising Identifiers:</strong> Ad identifiers provided by Google Play Services</li>
+            </ul>
+
+            <h2>2. How We Use Information</h2>
+            <p>We use collected information for:</p>
+            <ul>
+                <li>Personalized calorie and nutrition calculations</li>
+                <li>AI-powered food analysis and recipe suggestions</li>
+                <li>Creating progress charts and reports</li>
+                <li>Improving app experience</li>
+                <li>Managing premium subscriptions</li>
+                <li>Providing technical support</li>
+                <li>Meeting legal obligations</li>
+            </ul>
+
+            <h2>3. Third-Party Services</h2>
+            <p>Our app uses the following third-party services:</p>
+
+            <h3>3.1 Anthropic (Claude AI)</h3>
+            <p>We use Anthropic's Claude AI service for food photo analysis. Images are sent to Anthropic servers for analysis. <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic Privacy Policy</a></p>
+
+            <h3>3.2 Google AdMob</h3>
+            <p>We use Google AdMob to show ads to free version users. AdMob may use your device identifiers for personalized ads. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+
+            <h3>3.3 RevenueCat</h3>
+            <p>We use RevenueCat for premium subscription management. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></p>
+
+            <h3>3.4 Google Play Billing</h3>
+            <p>Google Play Billing is used for premium subscription purchases. We do not see your payment information; it is processed entirely by Google.</p>
+
+            <h3>3.5 Firebase</h3>
+            <p>We use Google Firebase for authentication and data sync. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+
+            <h3>3.6 Open Food Facts</h3>
+            <p>We use the Open Food Facts open database to retrieve product information during barcode scanning.</p>
+
+            <h2>4. Data Storage</h2>
+            <p>Most of your data is stored <strong>locally on your device</strong> in the Hive database. Food photos are sent to Anthropic servers for AI analysis but are not used for training by Anthropic after the response.</p>
+
+            <h2>5. Data Security</h2>
+            <p>We use industry-standard security measures to protect your data. However, no method of transmission over the Internet is 100% secure.</p>
+
+            <h2>6. User Rights (KVKK & GDPR)</h2>
+            <p>You have the following rights:</p>
+            <ul>
+                <li>Access your data</li>
+                <li>Correct or delete your data</li>
+                <li>Object to data processing</li>
+                <li>Data portability</li>
+                <li>Restrict processing of your data</li>
+            </ul>
+            <p>To exercise these rights: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+
+            <h2>7. Children</h2>
+            <p>Our app is not intended for children under 13. We do not knowingly collect information from children under 13. Please contact us if you notice such a situation.</p>
+
+            <h2>8. Account Deletion</h2>
+            <p>To delete your account and all data:</p>
+            <ul>
+                <li>In-app: Settings → Reset Profile</li>
+                <li>Email: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></li>
+            </ul>
+
+            <h2>9. Policy Changes</h2>
+            <p>We may update this Privacy Policy from time to time. Important changes will be notified in the app or on this page.</p>
+
+            <h2>10. Contact</h2>
+            <div class="contact-box">
+                <p><strong>For your questions:</strong></p>
+                <p>📧 Email: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+                <p>🌐 Web: <a href="https://bystark.github.io">bystark.github.io</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Meal Meter. Tüm hakları saklıdır / All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="index.html">Ana Sayfa / Home</a> ·
+            <a href="terms.html">Kullanım Şartları / Terms</a>
+        </p>
+    </footer>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
