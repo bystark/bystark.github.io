@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanım Şartları - Meal Meter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .lang-switch {
+            text-align: center;
+            padding: 16px;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .lang-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 0 4px;
+            background: #f3f4f6;
+            color: #374151;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .lang-btn.active {
+            background: #16A34A;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #16A34A;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 22px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h3 {
+            color: #15803D;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        p, li {
+            color: #374151;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #16A34A;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            background: #f0fdf4;
+            border-left: 4px solid #16A34A;
+            padding: 12px 16px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #15803D;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #92400e;
+        }
+
+        .contact-box {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        footer a {
+            margin: 0 8px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: #16A34A;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🍎 Meal Meter</h1>
+        <p>Kullanım Şartları / Terms of Service</p>
+    </div>
+
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="showLang('tr')">🇹🇷 Türkçe</button>
+        <button class="lang-btn" onclick="showLang('en')">🇬🇧 English</button>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Ana Sayfa / Home</a>
+
+        <!-- TÜRKÇE -->
+        <div id="tr-content" class="lang-section active">
+            <h2>Kullanım Şartları</h2>
+            <div class="last-updated">📅 Son güncelleme: 7 Haziran 2026</div>
+
+            <p>Meal Meter uygulamasını ("Uygulama") kullanmadan önce lütfen bu Kullanım Şartlarını dikkatle okuyun. Uygulamayı kullanarak bu şartları kabul etmiş sayılırsınız.</p>
+
+            <h2>1. Kabul</h2>
+            <p>Uygulamayı indirerek, yükleyerek veya kullanarak bu Kullanım Şartlarını kabul etmiş olursunuz. Bu şartları kabul etmiyorsanız uygulamayı kullanmamanız gerekir.</p>
+
+            <h2>2. Hizmet Tanımı</h2>
+            <p>Meal Meter; kalori sayma, beslenme takibi, yapay zeka destekli yemek analizi, tarif önerileri, yemek planlama ve aktivite takibi sağlayan bir mobil uygulamadır.</p>
+
+            <h2>3. Yaş Sınırı</h2>
+            <p>Uygulamayı kullanabilmek için en az <strong>13 yaşında</strong> olmanız gerekir. 13-18 yaş arası kullanıcıların ebeveyn veya yasal vasilerinin onayını alması gerekir.</p>
+
+            <h2>4. Hesap ve Güvenlik</h2>
+            <ul>
+                <li>Hesap bilgilerinizin gizliliğini korumakla yükümlüsünüz</li>
+                <li>Hesabınızla yapılan tüm işlemlerden sorumlusunuz</li>
+                <li>Yetkisiz erişim durumunda derhal bizi bilgilendirmelisiniz</li>
+                <li>Birden fazla hesap oluşturamazsınız</li>
+            </ul>
+
+            <h2>5. Sağlık ve Tıbbi Sorumluluk Reddi</h2>
+            <div class="warning-box">
+                <strong>⚠️ ÖNEMLİ:</strong> Meal Meter bir <strong>tıbbi cihaz veya tıbbi danışmanlık servisi değildir</strong>. Uygulamada sunulan bilgiler (kalori hesaplamaları, beslenme önerileri, tarifler) sadece bilgilendirme amaçlıdır.
+            </div>
+
+            <ul>
+                <li>Önemli sağlık kararları almadan önce mutlaka bir doktor veya diyetisyene danışın</li>
+                <li>Tıbbi durumlar veya alerjiler için profesyonel tıbbi tavsiye alın</li>
+                <li>AI analiz sonuçları %100 doğru olmayabilir, tahmini değerlerdir</li>
+                <li>Meal Meter, uygulamadan elde edilen bilgilere dayanarak alınan sağlık kararlarından sorumlu değildir</li>
+            </ul>
+
+            <h2>6. Premium Abonelik</h2>
+
+            <h3>6.1 Abonelik Türleri</h3>
+            <ul>
+                <li>Aylık Premium</li>
+                <li>Yıllık Premium</li>
+            </ul>
+
+            <h3>6.2 Ödeme</h3>
+            <p>Tüm ödemeler Google Play Faturalandırma üzerinden işlenir. Abonelik ücreti satın alma anında alınır.</p>
+
+            <h3>6.3 Otomatik Yenileme</h3>
+            <p>Abonelikler, mevcut dönemin bitiminden en az 24 saat önce iptal edilmedikçe otomatik olarak yenilenir. Yenileme ücreti, Google Play hesabınıza bağlı ödeme yönteminden tahsil edilir.</p>
+
+            <h3>6.4 İptal</h3>
+            <p>Aboneliğinizi istediğiniz zaman Google Play hesap ayarlarınızdan iptal edebilirsiniz. İptal, mevcut faturalandırma dönemi sona erdikten sonra etkili olur.</p>
+
+            <h3>6.5 İade</h3>
+            <p>İade talepleri Google Play Store politikalarına tabidir. Genel olarak satın alımdan sonraki 48 saat içinde iade talep edilebilir. Detaylar için: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play İade Politikası</a></p>
+
+            <h2>7. Reklamlar</h2>
+            <p>Ücretsiz versiyon kullanıcılarına Google AdMob aracılığıyla reklam gösterilir. Premium abonelik satın alarak reklamlardan kaçınabilirsiniz. Reklamların içeriği, Google AdMob tarafından kontrol edilir ve bizim sorumluluğumuzda değildir.</p>
+
+            <h2>8. Kullanıcı Davranışları</h2>
+            <p>Uygulamayı kullanırken şunları yapmayacağınızı kabul edersiniz:</p>
+            <ul>
+                <li>Yasalara aykırı amaçlarla kullanma</li>
+                <li>Diğer kullanıcıların haklarını ihlal etme</li>
+                <li>Uygulamanın çalışmasını engelleme veya bozma</li>
+                <li>Tersine mühendislik veya kaynak kodu çıkarma</li>
+                <li>Sahte hesap veya sahte bilgi oluşturma</li>
+                <li>Spam veya zararlı yazılım yayma</li>
+            </ul>
+
+            <h2>9. Fikri Mülkiyet</h2>
+            <p>Meal Meter uygulaması, içeriği, logosu, tasarımı ve kodları telif hakkı ile korunmaktadır. İzinsiz kopyalama, dağıtma veya değiştirme yasaktır.</p>
+
+            <h2>10. Sorumluluk Sınırlaması</h2>
+            <p>Yasaların izin verdiği azami ölçüde, Meal Meter aşağıdakilerden sorumlu değildir:</p>
+            <ul>
+                <li>Dolaylı, arızi veya sonuç olarak ortaya çıkan zararlar</li>
+                <li>Veri kaybı veya iş kaybı</li>
+                <li>AI analiz hatalarından kaynaklanan sorunlar</li>
+                <li>Üçüncü taraf servislerin kesintileri</li>
+                <li>Kullanıcı içeriğinden kaynaklanan sorunlar</li>
+            </ul>
+
+            <h2>11. Hizmet Değişiklikleri</h2>
+            <p>Önceden bildirimde bulunarak veya bulunmadan, uygulamayı veya herhangi bir özelliğini değiştirme, askıya alma veya sonlandırma hakkını saklı tutarız.</p>
+
+            <h2>12. Hesap Feshi</h2>
+            <p>Bu şartları ihlal etmeniz durumunda hesabınızı uyarı vermeden askıya alma veya sonlandırma hakkını saklı tutarız.</p>
+
+            <h2>13. Şartların Değiştirilmesi</h2>
+            <p>Bu Kullanım Şartlarını zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulama içinde bildiririz. Güncellemelerden sonra uygulamayı kullanmaya devam etmeniz değişikliklerin kabulü anlamına gelir.</p>
+
+            <h2>14. Geçerli Hukuk</h2>
+            <p>Bu Şartlar, Türkiye Cumhuriyeti yasalarına tabidir. Uyuşmazlıklar Denizli mahkemeleri ve icra müdürlüklerinde çözülecektir.</p>
+
+            <h2>15. İletişim</h2>
+            <div class="contact-box">
+                <p><strong>Sorularınız için:</strong></p>
+                <p>📧 E-posta: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+                <p>🌐 Web: <a href="https://bystark.github.io">bystark.github.io</a></p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="en-content" class="lang-section">
+            <h2>Terms of Service</h2>
+            <div class="last-updated">📅 Last updated: June 7, 2026</div>
+
+            <p>Please read these Terms of Service carefully before using the Meal Meter application ("App"). By using the App, you agree to these terms.</p>
+
+            <h2>1. Acceptance</h2>
+            <p>By downloading, installing, or using the App, you accept these Terms of Service. If you do not accept these terms, you should not use the App.</p>
+
+            <h2>2. Service Description</h2>
+            <p>Meal Meter is a mobile application providing calorie counting, nutrition tracking, AI-powered food analysis, recipe suggestions, meal planning, and activity tracking.</p>
+
+            <h2>3. Age Requirement</h2>
+            <p>You must be at least <strong>13 years old</strong> to use the App. Users between 13-18 years old must have parental or legal guardian consent.</p>
+
+            <h2>4. Account and Security</h2>
+            <ul>
+                <li>You are responsible for protecting the confidentiality of your account information</li>
+                <li>You are responsible for all activities under your account</li>
+                <li>You must notify us immediately of any unauthorized access</li>
+                <li>You may not create multiple accounts</li>
+            </ul>
+
+            <h2>5. Health and Medical Disclaimer</h2>
+            <div class="warning-box">
+                <strong>⚠️ IMPORTANT:</strong> Meal Meter is <strong>not a medical device or medical advisory service</strong>. Information provided in the app (calorie calculations, nutrition suggestions, recipes) is for informational purposes only.
+            </div>
+
+            <ul>
+                <li>Consult a doctor or dietitian before making important health decisions</li>
+                <li>Seek professional medical advice for medical conditions or allergies</li>
+                <li>AI analysis results may not be 100% accurate; they are estimates</li>
+                <li>Meal Meter is not responsible for health decisions made based on app information</li>
+            </ul>
+
+            <h2>6. Premium Subscription</h2>
+
+            <h3>6.1 Subscription Types</h3>
+            <ul>
+                <li>Monthly Premium</li>
+                <li>Annual Premium</li>
+            </ul>
+
+            <h3>6.2 Payment</h3>
+            <p>All payments are processed through Google Play Billing. Subscription fee is charged at the time of purchase.</p>
+
+            <h3>6.3 Auto-Renewal</h3>
+            <p>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Renewal fee will be charged through the payment method linked to your Google Play account.</p>
+
+            <h3>6.4 Cancellation</h3>
+            <p>You can cancel your subscription at any time from your Google Play account settings. Cancellation takes effect at the end of the current billing period.</p>
+
+            <h3>6.5 Refunds</h3>
+            <p>Refund requests are subject to Google Play Store policies. Generally, refunds can be requested within 48 hours of purchase. For details: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play Refund Policy</a></p>
+
+            <h2>7. Advertisements</h2>
+            <p>Free version users are shown ads via Google AdMob. You can avoid ads by purchasing a premium subscription. Ad content is controlled by Google AdMob and is not our responsibility.</p>
+
+            <h2>8. User Conduct</h2>
+            <p>When using the App, you agree NOT to:</p>
+            <ul>
+                <li>Use for illegal purposes</li>
+                <li>Violate other users' rights</li>
+                <li>Interfere with or disrupt app operation</li>
+                <li>Reverse engineer or extract source code</li>
+                <li>Create fake accounts or false information</li>
+                <li>Distribute spam or malware</li>
+            </ul>
+
+            <h2>9. Intellectual Property</h2>
+            <p>The Meal Meter app, its content, logo, design, and code are protected by copyright. Unauthorized copying, distribution, or modification is prohibited.</p>
+
+            <h2>10. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Meal Meter is not responsible for:</p>
+            <ul>
+                <li>Indirect, incidental, or consequential damages</li>
+                <li>Data loss or business loss</li>
+                <li>Problems arising from AI analysis errors</li>
+                <li>Third-party service interruptions</li>
+                <li>Problems arising from user content</li>
+            </ul>
+
+            <h2>11. Service Changes</h2>
+            <p>We reserve the right to modify, suspend, or terminate the app or any feature, with or without prior notice.</p>
+
+            <h2>12. Account Termination</h2>
+            <p>We reserve the right to suspend or terminate your account without warning if you violate these terms.</p>
+
+            <h2>13. Changes to Terms</h2>
+            <p>We may update these Terms of Service from time to time. Important changes will be notified in the app. Continued use of the app after updates constitutes acceptance of changes.</p>
+
+            <h2>14. Governing Law</h2>
+            <p>These Terms are governed by the laws of the Republic of Turkey. Disputes will be resolved in Denizli courts and enforcement offices.</p>
+
+            <h2>15. Contact</h2>
+            <div class="contact-box">
+                <p><strong>For your questions:</strong></p>
+                <p>📧 Email: <a href="mailto:destek@bystark.github.io">destek@bystark.github.io</a></p>
+                <p>🌐 Web: <a href="https://bystark.github.io">bystark.github.io</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Meal Meter. Tüm hakları saklıdır / All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="index.html">Ana Sayfa / Home</a> ·
+            <a href="privacy.html">Gizlilik / Privacy</a>
+        </p>
+    </footer>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
