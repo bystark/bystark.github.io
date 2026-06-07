@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="PQRVVtYO9Z2ul9s87jRYOHaqricAkSspY_h2-F9o8g4" />
+    <title>Meal Meter - AI Destekli Kalori ve Beslenme Takibi</title>
+    <meta name="description" content="Meal Meter, yapay zeka destekli kalori sayma ve beslenme takip uygulamasıdır. Fotoğrafla yemek analizi, barkod tarama ve kişiselleştirilmiş tarif önerileri.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+            min-height: 100vh;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: white;
+            color: #16A34A;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        .features {
+            background: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 48px;
+            color: #16A34A;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #15803D;
+        }
+
+        .feature p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        .info-section {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 32px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .info-section h2 {
+            color: #16A34A;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .info-section p {
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 32px; }
+            .tagline { font-size: 16px; }
+            .features { padding: 40px 24px; }
+            .features h2 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🍎</div>
+            <h1>Meal Meter</h1>
+            <p class="tagline">AI destekli kalori sayma ve beslenme takip uygulaması. Fotoğrafla yemek analizi, barkod tarama ve kişiselleştirilmiş öneriler.</p>
+            <div class="cta-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.meal_meter.meal_meter" class="btn">
+                    📱 Google Play'den İndir
+                </a>
+            </div>
+        </header>
+
+        <section class="features">
+            <h2>Özellikler</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>AI Yemek Analizi</h3>
+                    <p>Yemeğinin fotoğrafını çek, AI kalorisini ve besin değerlerini anında hesaplasın.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detaylı Takip</h3>
+                    <p>Günlük kalori, protein, karbonhidrat ve yağ tüketimini grafiklerle takip et.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Barkod Tarama</h3>
+                    <p>Marketten aldığın ürünlerin barkodunu okutarak besin değerlerini al.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🍳</div>
+                    <h3>Tarif Önerileri</h3>
+                    <p>Hedeflerine uygun, sağlıklı tarif önerileri al.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Yemek Planlama</h3>
+                    <p>Haftalık yemek planlamayla beslenmeni organize et.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Başarımlar</h3>
+                    <p>Hedeflerine ulaştıkça rozetler kazan, motivasyonunu yüksek tut.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Hakkında</h2>
+            <p>Meal Meter, sağlıklı yaşam yolculuğunda sana eşlik eden bir kalori sayma ve beslenme takip uygulamasıdır. Yapay zeka teknolojisi ile yemeklerinin fotoğrafını analiz ederek kalori ve besin değerlerini hesaplar.</p>
+            <p>Hem Türkçe hem İngilizce dil desteğiyle her yerden kullanılabilir. Premium üyelikle sınırsız AI analiz hakkı ve özel özelliklere erişebilirsin.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Meal Meter. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 8px;">
+                <a href="privacy.html">Gizlilik Politikası</a> ·
+                <a href="terms.html">Kullanım Şartları</a> ·
+                <a href="mailto:destek@bystark.github.io">İletişim</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
